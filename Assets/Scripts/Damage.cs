@@ -17,7 +17,7 @@ public class Damage : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            health -= 50;
+            health -= 80; //test
             death();
         }
     }
