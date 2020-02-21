@@ -17,7 +17,7 @@ public class Shooting : MonoBehaviour
         cooldownTimer -= Time.deltaTime;
         if (Input.GetButton("Fire1") && cooldownTimer <= 0)
         {
-            Debug.Log("Pew!");
+            Debug.Log("Pew-Пиу!");
             cooldownTimer = fireDelay;
             Vector3 offset = transform.rotation * new Vector3(1f, 0, 0);
             Instantiate(bulletPrefab, transform.position + offset, transform.rotation);
